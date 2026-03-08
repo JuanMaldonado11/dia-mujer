@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<title>Día de la Mujer</title>
+
+<style>
+
+body{
+    background: linear-gradient(#f7d6e0,#ffffff);
+    font-family: Georgia, serif;
+    text-align: center;
+    padding: 40px;
+    overflow-x:hidden;
+}
+
+/* titulo animado */
+.titulo{
+  font-size:40px;
+  color:#b30059;
+  overflow:hidden;
+  border-right:3px solid;
+  white-space:nowrap;
+  width:0;
+  margin:auto;
+  animation: escribir 4s steps(40,end) forwards;
+}
+
+@keyframes escribir{
+  from{width:0}
+  to{width:100%}
+}
+
+/* subtitulo */
+h2{
+  color:#444;
+}
+
+/* texto */
+p{
+  font-size:19px;
+  line-height:1.7;
+  max-width:600px;
+  margin:auto;
+}
+
+/* imagen animada */
+.foto{
+  width:250px;
+  border-radius:15px;
+  margin:20px;
+  opacity:0;
+  transform:translateY(40px);
+  animation: aparecer 3s forwards;
+}
+
+@keyframes aparecer{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* corazones */
+.corazon{
+  position:fixed;
+  top:-20px;
+  font-size:25px;
+  color:red;
+  animation: caer 5s linear infinite;
+}
+
+@keyframes caer{
+  0%{
+    transform: translateY(-20px);
+    opacity:1;
+  }
+  100%{
+    transform: translateY(100vh);
+    opacity:0;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 class="titulo">8 de Marzo</h1>
+<h2 class="titulo">Día Internacional de la Mujer </h2>
+<h3>Mi amor, hoy celebro la maravillosa mujer que eres</h3>
+
+<img src="Imagenes/4.jpeg" class="foto">
+
+<p>
+Hoy celebramos tu fuerza, tu valentía y cada lucha que has enfrentado en la vida, 
+pero más que nada hoy celebro la maravillosa persona que eres ❤️.
+</p>
+
+<br>
+
+<p>
+Gracias por tu amor, por tu paciencia y por esa capacidad tan especial que tienes 
+de transformar mi mundo con tu corazón. Desde que llegaste a mi vida todo se siente 
+más bonito. Eres una persona increíble y te amo con todo mi corazón.  
+Tu sonrisa, tu forma de ser y tu manera de amar hacen que cada día a tu lado sea un regalo ❤️.
+</p>
+
+<br>
+
+<p>
+Ante mis ojos eres una mujer perfecta, una diosa, una mujer increíble y absolutamente especial.  
+No existe nadie como tú en este mundo. Mi flaca bella, quiero que siempre recuerdes lo importante 
+y valiosa que eres para mí. Te amo muchísimo y me siento muy afortunado de tenerte en mi vida ❤️.
+</p>
+
+<br>
+
+<p style="font-size:35px;">
+🌸 Feliz Día Internacional de la Mujer 🌸
+</p>
+
+<!-- corazones -->
+<div class="corazon" style="left:10%">❤️</div>
+<div class="corazon" style="left:30%">❤️</div>
+<div class="corazon" style="left:50%">❤️</div>
+<div class="corazon" style="left:70%">❤️</div>
+<div class="corazon" style="left:90%">❤️</div>
+
+<footer style="margin-top:50px; font-size:14px; color:#555;">
+Hecho con amor ❤️ <br>
+Juan Carlos Maldonado <br>
+8 de Marzo de 2026
+</footer>
+<a href="Videos/AMOR.mp4">
+<button style="
+padding:15px 30px;
+font-size:18px;
+background:#ff4d88;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+">
+▶️ Ver video
+</button>
+</a>
+
+</body>
+</html>
